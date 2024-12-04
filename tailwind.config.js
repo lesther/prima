@@ -12,6 +12,9 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        xs: '400px',
+      },
       fontFamily: {
         bricolage: ["'Bricolage Grotesque'", "sans-serif"],
         instrument: ["'Instrument Sans'", "sans-serif"],
@@ -69,6 +72,9 @@ module.exports = {
         
         /* dark */
         blue_gray: "#262532",
+
+        /* yellow */
+        yellow: "#f6e85c",
       },
       fontSize: {
         tiny: ['16px', '1.5'],
