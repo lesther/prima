@@ -11,6 +11,51 @@
 </head>
 
 <body>
+
+
+    <header class="header">
+        <div class="header_container">
+            <div class="header_logo">
+                <a href="index.html">
+                    <img src="../images/logo-768x184.png" alt="prima-logo" width="100">
+                </a>
+            </div>
+            <div class="nav order-last xl:order-2">
+                <div class="nav_wrap">
+                    <button class="nav_button">
+                        <img src="../images/menu_icon--light.svg" alt="menu_icon" width="20">
+                    </button>
+                    <ul class="nav_menu">
+                        <li><a href="/" class="nav_menu-item nav_menu-item--active" >Home</a></li>
+                        <li><a href="consumers.html" class="nav_menu-item" >For Consumers</a></li>
+                        <li><a href="restaurants.html" class="nav_menu-item" >For Restaurants</a></li>
+                        <li><a href="concierges.html" class="nav_menu-item" >For Concierges</a></li>
+                        <li><a href="about-us.html" class="nav_menu-item" >About Us</a></li>
+                        <li><a href="contact-us.html" class="nav_menu-item" >Contact</a></li>
+                        <li>
+                            <div class="flex flex-col gap-2 sm:hidden">
+                                <a href="" class="btn bg-gradient-to-b from-blue from-salmon to-salmon_accent text-white py-2 text-center">
+                                    Talk to PRIMA
+                                </a>
+                                <a href="" class="btn bg-gradient-to-b from-blue from-salmon to-salmon_accent text-white py-2 text-center">
+                                    Login
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gap-4 xl:order-last hidden sm:flex">
+                <a href="" class="btn bg-primary text-white flex-auto py-2">
+                    Talk to PRIMA
+                </a>
+                <a href="" class="btn bg-primary text-white flex-auto py-2">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
     <section>
         <div class="container">
             <div class="flex flex-col gap-4  md:gap-6">
@@ -402,6 +447,42 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-6">
+                <div class="flex-1 flex gap-4 flex-col items-center text-center sm:text-left sm:items-start">
+                    <a href="index.html">
+                        <img src="../images/prima-logo--color.png" alt="prima-logo" width="130">
+                    </a>
+                    <p class="max-w-[400px] sm:max-w-[300px]">
+                        Unlock Prime Dining Reservations at the World’s Most Sought-After Restaurants
+                    </p>
+                </div>
+                <div class="flex-1 sm:max-w-[400px]">
+                    <div class="flex flex-col sm:flex-row gap-6 sm:gap-4">
+                        <div class="flex gap-2 flex-col flex-1  items-center sm:text-center sm:text-left sm:items-start">
+                            <p class="text-lg mb-3">Home</p>
+                            <a href="about-us.html" class="text-tiny text-neutral hover:underline">About</a>
+                            <a href="contact-us.html" class="text-tiny text-neutral hover:underline">Contact</a>
+                        </div>
+                        <div class="flex gap-2 flex-col flex-1  items-center sm:text-center sm:text-left sm:items-start">
+                            <p class="text-lg mb-3">Available For</p>
+                            <a href="restaurant.html" class="text-tiny text-neutral hover:underline">Restaurant</a>
+                            <a href="concierges.html" class="text-tiny text-neutral hover:underline">Concierge</a>
+                            <a href="consumers.html" class="text-tiny text-neutral hover:underline">Consumers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p class="text-tiny text-neutral">
+                    © 2024 PRIMA VIP. All rights reserved.
+                </p>
+                <a href="https://omnipresent.app/" target="_blank" class="text-tiny text-neutral hover:underline">Website by Omnipresent</a>
+            </div>
+        </div>
+    </footer>
     <!-- scripts -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script> -->
+    <script src="js/layout.js"></script>
 </body>
