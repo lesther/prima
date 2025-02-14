@@ -1639,6 +1639,11 @@ h4{
   border-bottom-left-radius: 15px;
 }
 
+.rounded-t-\[0\]{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .rounded-t-\[15px\]{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -2283,6 +2288,10 @@ body{
 
   .md\:pb-3{
     padding-bottom: 0.75rem;
+  }
+
+  .md\:pt-0{
+    padding-top: 0px;
   }
 
   .md\:pt-1{
