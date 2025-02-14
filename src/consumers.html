@@ -25,7 +25,7 @@
                         <img src="../images/menu_icon--light.svg" alt="menu_icon" width="20">
                     </button>
                     <ul class="nav_menu">
-                        <li><a href="/" class="nav_menu-item nav_menu-item--active" >Home</a></li>
+                        <li><a href="index.html" class="nav_menu-item nav_menu-item--active" >Home</a></li>
                         <li><a href="consumers.html" class="nav_menu-item" >For Consumers</a></li>
                         <li><a href="restaurants.html" class="nav_menu-item" >For Restaurants</a></li>
                         <li><a href="concierges.html" class="nav_menu-item" >For Concierges</a></li>
@@ -94,7 +94,7 @@
                             <img src="../images/shield_icon.svg" alt="shield-icon">
                             Our Mission
                         </span>
-                        <p class="text-xl font-bricolage text-white">
+                        <p class="font-bricolage text-white font-semibold text-xl_1 antialiased tracking-normal">
                             To empower diners by offering access to exclusive, premium dining reservations while enhancing the dining experience through seamless booking processes.
                         </p>
                     </div>
@@ -103,7 +103,7 @@
                             <img src="../images/eye_icon.svg" alt="eye-icon">
                             Our Vision
                         </span>
-                        <p class="text-xl font-bricolage text-white">
+                        <p class="font-bricolage text-white font-semibold text-xl_1 antialiased tracking-normal">
                             To create a world where every dining reservation feels like a VIP experience, offering consumers effortless access to their favorite restaurants and exceptional customer service.
                         </p>
                     </div>
@@ -212,7 +212,9 @@
                 <!-- Consumers -->
                 <div class="flex gap-4 md:gap-10 flex-col md:flex-row">
                     <div class="flex-1">
-                        <img src="../images/vip-access.png" alt="app-image" class="img_full rounded-[20px]">
+                        <div class="sticky top-[110px]">
+                            <img src="../images/vip-access.png" alt="app-image">
+                        </div>
                     </div>
                     <div class="flex-1 flex flex-col gap-4 items-start">
                         <span class="tag gap-2 pl-2">
@@ -263,28 +265,78 @@
                     Enjoy seamless access to exclusive reservations at the world’s top restaurants. Skip the waitlists and secure prime dining experiences through PRIMA’s trusted concierge network.
                 </p>
 
-                <div class="box border border-divider shadow-2xl flex flex-col gap-3 w-full p-0">
-                    <!-- picture -->
-                    <div class="flex flex-col items-center relative overflow-hidden max-h-[300px]">
-                        <img src="../images/dots_bg.png" alt="dots" class="absolute top-0 left-0 right-0 m-auto max-w-[400px] w-full">
-                        <img src="../images/reservation-1.png" alt="reservation-picture" class="relative z-[1]">
-                    </div>
-                    <!-- nav -->
-                    <div class="flex max-w-[700px] m-auto w-full">
-                        <img src="../images/line-left.svg" alt="line-left" class=" w-[70px] sm:w-auto">
-                    
-                        <div class="text-center text-dark flex-1">
-                            1
+                <div class="grid grid-cols-1 gap-4 2 lg:grid-cols-3 w-full">
+                    <div class="box border border-divider shadow-2xl flex flex-col gap-3 w-full p-0">
+                        <!-- picture -->
+                        <div class="flex flex-col items-center relative overflow-hidden max-h-[300px] px-5">
+                            <img src="../images/dots_bg.png" alt="dots" class="absolute top-0 left-0 right-0 m-auto max-w-[400px] w-full">
+                            <img src="../images/reservation-1.png" alt="reservation-picture" class="relative z-[1] max-h-[100%] h-[auto]">
                         </div>
-                        <img src="../images/line-right.svg" alt="line-right" class=" w-[70px] sm:w-auto">
+                        <!-- nav -->
+                        <div class="flex m-auto w-full">
+                            <img src="../images/line-left.svg" alt="line-left" class=" w-[70px] sm:w-auto">
+                        
+                            <div class="text-center text-dark flex-1 font-semibold">
+                                1
+                            </div>
+                            <img src="../images/line-right.svg" alt="line-right" class=" w-[70px] sm:w-auto">
+                        </div>
+                        <div class="flex flex-col gap-3 p-6 pt-0">
+                            <p class="font-bricolage text-lg text-dark font-semibold">
+                                Browse & Select
+                            </p>
+                            <p>
+                                Select from exclusive prime-time slots and book your favorite restaurants in just a few clicks.
+                            </p>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-3 p-6 pt-0">
-                        <p class="font-bricolage text-lg text-dark">
-                            Browse & Select
-                        </p>
-                        <p>
-                            Select from exclusive prime-time slots and book your favorite restaurants in just a few clicks.
-                        </p>
+                    <div class="box border border-divider shadow-2xl flex flex-col gap-3 w-full p-0">
+                        <!-- picture -->
+                        <div class="flex flex-col items-center relative overflow-hidden max-h-[300px] px-5">
+                            <img src="../images/dots_bg.png" alt="dots" class="absolute top-0 left-0 right-0 m-auto max-w-[400px] w-full">
+                            <img src="../images/reservation-2.png" alt="reservation-picture" class="relative z-[1] max-h-[100%] h-[auto]">">
+                        </div>
+                        <!-- nav -->
+                        <div class="flex m-auto w-full">
+                            <img src="../images/line-left.svg" alt="line-left" class=" w-[70px] sm:w-auto">
+                        
+                            <div class="text-center text-dark flex-1 font-semibold">
+                                2
+                            </div>
+                            <img src="../images/line-right.svg" alt="line-right" class=" w-[70px] sm:w-auto">
+                        </div>
+                        <div class="flex flex-col gap-3 p-6 pt-0">
+                            <p class="font-bricolage text-lg text-dark font-semibold">
+                                Book Your Reservation
+                            </p>
+                            <p>
+                                Receive inmediate confirmation for your reservation, guaranteeing your table without the wait.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box border border-divider shadow-2xl flex flex-col gap-3 w-full p-0">
+                        <!-- picture -->
+                        <div class="flex flex-col items-center relative overflow-hidden max-h-[300px] px-5">
+                            <img src="../images/dots_bg.png" alt="dots" class="absolute top-0 left-0 right-0 m-auto max-w-[400px] w-full">
+                            <img src="../images/fine-dining.png" alt="reservation-picture" class="relative z-[1] max-h-[100%] h-[auto]">">
+                        </div>
+                        <!-- nav -->
+                        <div class="flex m-auto w-full">
+                            <img src="../images/line-left.svg" alt="line-left" class=" w-[70px] sm:w-auto">
+                        
+                            <div class="text-center text-dark flex-1 font-semibold">
+                                3
+                            </div>
+                            <img src="../images/line-right.svg" alt="line-right" class=" w-[70px] sm:w-auto">
+                        </div>
+                        <div class="flex flex-col gap-3 p-6 pt-0">
+                            <p class="font-bricolage text-lg text-dark font-semibold">
+                                Enjoy Your Experience
+                            </p>
+                            <p>
+                                Gain entry to highly sought-after dinning experiencs, often unavaliable through traditional channels.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -453,7 +505,7 @@
                         No More Waiting, Just Enjoy!
                     </li>
                 </ul>
-                <a href="" class="btn bg-white text-primary mt-4">
+                <a href="" class="btn bg-white text-primary mt-4  relative z-10">
                     Reserve Your Table Now!
                 </a>
                 <div class="absolute bottom-0 left-0]  justify-between w-full hidden sm:flex pointer-events-none">

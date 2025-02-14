@@ -565,10 +565,16 @@ video {
 html{
   font-family: 'Instrument Sans', sans-serif;
   font-size: 17px;
-  line-height: 1.4;
   font-weight: 300;
+  line-height: 1.5;
   --tw-text-opacity: 1;
   color: rgb(96 96 96 / var(--tw-text-opacity, 1));
+}
+
+p{
+  letter-spacing: 0em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1{
@@ -593,6 +599,9 @@ h1{
 h1, h2, h3, h4, h5, h6{
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 500;
+  letter-spacing: 0em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h2{
@@ -694,11 +703,16 @@ h4{
   }
 }
 
+.text-xl_1{
+  font-size: 23px;
+  line-height: 1.25;
+}
+
 /*containers*/
 
 .container-small,.container{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 @media (min-width: 768px){
@@ -781,6 +795,12 @@ h4{
   padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  font-weight: 600;
+  letter-spacing: 0em;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 24 / var(--tw-text-opacity, 1));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* header */
@@ -812,8 +832,8 @@ h4{
 }
 
 .header{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 @media (min-width: 768px){
@@ -1357,6 +1377,10 @@ h4{
   top: 175px;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .z-\[-1\]{
   z-index: -1;
 }
@@ -1455,6 +1479,14 @@ h4{
 
 .h-\[45px\]{
   height: 45px;
+}
+
+.h-\[auto\]{
+  height: auto;
+}
+
+.max-h-\[100\%\]{
+  max-height: 100%;
 }
 
 .max-h-\[300px\]{
@@ -1885,6 +1917,11 @@ h4{
   padding: 1.5rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1965,6 +2002,10 @@ h4{
   font-weight: 600;
 }
 
+.tracking-normal{
+  letter-spacing: 0em;
+}
+
 .text-dark{
   --tw-text-opacity: 1;
   color: rgb(20 20 24 / var(--tw-text-opacity, 1));
@@ -1988,6 +2029,11 @@ h4{
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(246 232 92 / var(--tw-text-opacity, 1));
+}
+
+.antialiased{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .shadow-2xl{
@@ -2034,7 +2080,7 @@ textarea:focus,
 /* container */
 
 body{
-  padding-top: 70px;
+  padding-top: 109px;
 }
 
 /* base */
