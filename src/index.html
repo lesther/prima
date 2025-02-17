@@ -15,13 +15,13 @@
         <div class="header_container">
             <div class="header_logo">
                 <a href="index.html">
-                    <img src="../images/logo-768x184.png" alt="prima-logo" width="118">
+                    <img src="../images/logo-768x184.png" alt="prima-logo" class="header_logo-img">
                 </a>
             </div>
             <div class="nav order-last xl:order-2">
                 <div class="nav_wrap">
                     <button class="nav_button">
-                        <img src="../images/menu_icon--light.svg" alt="menu_icon" width="20">
+                        <img src="../images/menu_icon--light.svg" alt="menu_icon" class="nav_button-icon">
                     </button>
                     <ul class="nav_menu">
                         <li><a href="index.html" class="nav_menu-item nav_menu-item--active" >Home</a></li>
@@ -31,7 +31,7 @@
                         <li><a href="about-us.html" class="nav_menu-item" >About Us</a></li>
                         <li><a href="contact-us.html" class="nav_menu-item" >Contact</a></li>
                         <li>
-                            <div class="flex flex-col gap-2 sm:hidden">
+                            <div class="flex flex-col gap-2 md:hidden">
                                 <a href="" class="btn bg-gradient-to-b from-blue from-salmon to-salmon_accent text-white py-2 text-center">
                                     Talk to PRIMA
                                 </a>
@@ -43,7 +43,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="gap-4 xl:order-last hidden sm:flex">
+            <div class="gap-4 xl:order-last hidden md:flex">
                 <a href="" class="btn bg-primary text-white flex-auto py-2">
                     Talk to PRIMA
                 </a>
@@ -56,37 +56,39 @@
 
     <section class="fade-in">
         <div class="container ">
-            <div class="flex flex-col gap-[22px]  md:gap-[22px]">
+            <div class="intro">
                 
                 <!-- intro hero -->
-                <div class="flex flex-col gap-4 md:gap-[22px] md:flex-row relative">
-                    <div class="md:flex-1 h-[300px] sm:h-[350px] md:h-auto">
-                        <img src="../images/image-1.png" alt="" class="img_full hover:scale-[1.01] transition_03 rounded-[24px]">
+                <div class="intro_hero">
+                    <div class="intro_hero-img_hero">
+                        <img src="../images/image-1.png" alt="" class="intro_hero-img_trans">
                     </div>
-                    <div class="py-4 sm:py-6 md:absolute md:left-0 md:bottom-0 md:top-0 md:right-0 m-auto flex flex-col items-center justify-center  pointer-events-none">
+                    <div class="intro_hero-text">
                         <div class="pointer-events-auto relative z-[2]">
-                            <h1 class="sm:flex sm:flex-row sm:flex-col justify-center items-center dark text-center text-dark">
+                            <h1 class="intro_hero-h1">
                                 <span class="text-intro">Unlock Prime Dining</span>
                                 <span class="text-intro">Reservations at the World’s Most</span>
                                 <span class="text-intro">Sought-After Restaurants.</span>
                             </h1>
                         </div>
                     </div>
-                    <div class="flex-1 flex gap-4  md:gap-6 md:flex-col">
-                        <div class="flex-1 h-[200px] lg:min-h-[248px]">
-                            <img src="../images/city.png" alt="" class="img_full hover:scale-[1.01] transition_03 rounded-[24px]">
+                    <div class="intro_hero-img_container">
+                        <div class="intro_hero-img">
+                            <img src="../images/city.png" alt="" class="intro_hero-img_trans hidden lg:block">
+                            <img src="../images/casadona.jpg" alt="" class="intro_hero-img_trans block lg:hidden">
                         </div>
-                        <div class="flex-1 h-[200px] lg:min-h-[248px]">
-                            <img src="../images/restaurant.png" alt="" class="img_full hover:scale-[1.01] transition_03 rounded-[24px]">
+                        <div class="intro_hero-img">
+                            <img src="../images/restaurant.png" alt="" class="intro_hero-img_trans hidden lg:block">
+                            <img src="../images/sparow.jpg" alt="" class="intro_hero-img_trans block lg:hidden">
                         </div>
                     </div>
                 </div>
 
                 <!-- cta -->
-                <div class="flex flex-col gap-4 md:gap-[22px] lg:flex-row relative">
-                    <div class="box flex-1 bg-gradient-to-b from-purple to-primary text-white">
-                        <div class="flex flex-col md:flex-row lg:flex-col gap-4 items-center">
-                            <div class="flex-1 gap-2 text-center md:text-left lg:text-center">
+                <div class="intro_cta">
+                    <div class="intro_cta-box bg-gradient-to-b from-purple to-primary">
+                        <div class="intro_cta-box_container">
+                            <div class="intro_cta-box_text">
                                 <h3 class="w-full">
                                     Consumers
                                 </h3>
@@ -94,14 +96,14 @@
                                     Get guaranteed access to exclusive venues in Miami, New York, LA, and more.
                                 </p>
                             </div>
-                            <a href="" class="btn bg-white text-primary">
+                            <a href="" class="intro_cta-box_btn">
                                 Talk to PRIMA Concierge
                             </a>
                         </div>
                     </div>
-                    <div class="box flex-1 bg-gradient-to-b from-salmon to-salmon_accent text-white">
-                        <div class="flex flex-col md:flex-row lg:flex-col gap-4 items-center">
-                            <div class="flex-1 gap-2 text-center md:text-left lg:text-center">
+                    <div class="intro_cta-box bg-gradient-to-b from-salmon to-salmon_accent">
+                        <div class="intro_cta-box_container">
+                            <div class="intro_cta-box_text">
                                 <h3 class="w-full">
                                     Restaurants
                                 </h3>
@@ -109,14 +111,14 @@
                                     Maximize profits, reduce cancellations, fill non-prime time reservations.
                                 </p>
                             </div>
-                            <a href="" class="btn bg-white text-primary">
+                            <a href="" class="intro_cta-box_btn">
                                 Talk to PRIMA
                             </a>
                         </div>
                     </div>
-                    <div class="box flex-1 bg-gradient-to-b from-blue to-green text-white">
-                        <div class="flex flex-col md:flex-row lg:flex-col gap-4 items-center">
-                            <div class="flex-1 gap-2 text-center md:text-left lg:text-center">
+                    <div class="intro_cta-box bg-gradient-to-b from-blue to-green">
+                        <div class="intro_cta-box_container">
+                            <div class="intro_cta-box_text">
                                 <h3 class="w-full">
                                     Concierges
                                 </h3>
@@ -124,7 +126,7 @@
                                     Provide clients with priority reservations and elevate your service.
                                 </p>
                             </div>
-                            <a href="" class="btn bg-white text-primary">
+                            <a href="" class="intro_cta-box_btn">
                                 Talk to PRIMA
                             </a>
                         </div>
