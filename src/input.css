@@ -34,10 +34,10 @@
   }
 
   h1 {
-    @apply text-[27px] leading-[1.2] md:text-[44px] md:leading-[56px];
+    @apply font-bricolage font-medium text-[27px] leading-[1.2] md:text-[44px] md:leading-[56px];
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     @apply font-bricolage font-medium antialiased tracking-normal;
   }
 
