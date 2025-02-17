@@ -18,6 +18,8 @@ module.exports = {
       fontFamily: {
         bricolage: ["'Bricolage Grotesque'", "sans-serif"],
         instrument: ["'Instrument Sans'", "sans-serif"],
+        walsheim: ["'Walsheim'", "sans-serif"],
+        roboto: ["'Roboto'", "sans-serif"],
       },
       colors: {
         primary: "#5046E5",
