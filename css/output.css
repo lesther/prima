@@ -1081,8 +1081,7 @@ h4{
   .intro_hero-btn_container{
     width: auto;
     flex-direction: column;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 8px;
     padding-top: 0px;
   }
 }
@@ -1131,6 +1130,10 @@ h4{
 
 .intro_hero-btn{
   width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -2208,12 +2211,12 @@ h4{
   margin-top: 1.5rem;
 }
 
-.mt-\[24px\]{
-  margin-top: 24px;
-}
-
 .mt-\[10px\]{
   margin-top: 10px;
+}
+
+.mt-\[24px\]{
+  margin-top: 24px;
 }
 
 .block{
@@ -2284,6 +2287,10 @@ h4{
   max-width: 1100px;
 }
 
+.max-w-\[244px\]{
+  max-width: 244px;
+}
+
 .max-w-\[360px\]{
   max-width: 360px;
 }
@@ -2306,10 +2313,6 @@ h4{
 
 .max-w-\[900px\]{
   max-width: 900px;
-}
-
-.max-w-\[244px\]{
-  max-width: 244px;
 }
 
 .flex-1{
@@ -2654,11 +2657,6 @@ h4{
   --tw-gradient-to: #DE5A59 var(--tw-gradient-to-position);
 }
 
-.object-left{
-  -o-object-position: left;
-     object-position: left;
-}
-
 .object-top{
   -o-object-position: top;
      object-position: top;
@@ -2950,6 +2948,10 @@ textarea:focus,
     width: 40px;
   }
 
+  .md\:max-w-\[390px\]{
+    max-width: 390px;
+  }
+
   .md\:max-w-\[500px\]{
     max-width: 500px;
   }
@@ -2958,16 +2960,8 @@ textarea:focus,
     max-width: 560px;
   }
 
-  .md\:max-w-\[\]{
-    max-width: ;
-  }
-
   .md\:max-w-\[580px\]{
     max-width: 580px;
-  }
-
-  .md\:max-w-\[390px\]{
-    max-width: 390px;
   }
 
   .md\:grid-cols-2{
@@ -3002,14 +2996,14 @@ textarea:focus,
     gap: 40px;
   }
 
-  .md\:object-top{
-    -o-object-position: top;
-       object-position: top;
-  }
-
   .md\:object-left{
     -o-object-position: left;
        object-position: left;
+  }
+
+  .md\:object-top{
+    -o-object-position: top;
+       object-position: top;
   }
 
   .md\:p-10{
