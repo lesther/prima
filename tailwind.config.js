@@ -92,8 +92,6 @@ module.exports = {
           maxWidth: '920px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '25px',
-          paddingRight: '25px',
         },
       });
     },

@@ -209,9 +209,13 @@
   .box .btn {
     @apply px-[24px] py-[12px];
   }
-  .box.box--outline {
-    @apply px-[20px] py-[20px];
+  .box_outline {
+    @apply flex-1 border border-divider rounded-[16px] flex gap-[8px] flex-col p-[20px];
   }
+  .box_outline-title {
+    @apply flex text-dark gap-3 font-bricolage text-[18px] font-[500] items-start gap-[8px];
+  }
+
   .box.p-6 {
     @apply px-[29px] py-[29px];
   }
