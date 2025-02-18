@@ -77,7 +77,7 @@ module.exports = {
         base: ['17px', '1.4'],
         headline: ['28px', '1.2'],
         subtitle: ['32px', '1.2'],
-        title: ['38px', '1.2'],
+        title: ['39px', '1.15'],
         hero: ['42px', '1.1'],
       },
       boxShadow: {

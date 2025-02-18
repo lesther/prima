@@ -20,7 +20,7 @@
     @apply flex flex-col items-center pt-[90px] md:pt-[130px];
   }
   body section {
-    @apply mt-[90px] px-[12px] w-full;
+    @apply px-[12px] w-full mt-[40px] lg:mt-[100px];
   }
   body section:last-of-type {
     @apply pb-[40px]
@@ -42,7 +42,7 @@
   }
 
   h2 {
-    @apply text-[28px] md:text-title;
+    @apply text-[32px] leading-[1.2] md:text-title;
   }
 
   h3 {
@@ -228,6 +228,17 @@
   }
   .box_gradient-text {
     @apply font-bricolage text-white font-semibold leading-[1.2] md:leading-[1.3] antialiased tracking-normal text-[20px] lg:text-[24px];
+  }
+
+  /* list */
+  .list_colored {
+    @apply flex-1 flex flex-col gap-4 items-start my-[20px] gap-[12px];
+  }
+  .list_colored .tag {
+    @apply text-[16px] leading-[1.3] pl-[6px] pr-[16px] py-[6px] rounded-[12px] md:rounded-[100px];
+  }
+  .list_colored .tag:not[class*="font-instrument"] {
+    @apply font-roboto;
   }
 
   /* grid */
