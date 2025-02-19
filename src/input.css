@@ -231,6 +231,17 @@
     @apply font-bricolage text-dark flex-1 font-[500] text-[16px] tracking-[-0.03em] md:tracking-normal md:text-[18px];
   }
 
+  /* cta */
+  .box_cta {
+    @apply flex flex-col gap-[8px] py-[40px] items-start md:items-center text-white relative px-[16px] md:px-[10px] rounded-[17px] bg-cover bg-center; 
+  }
+  .box_cta-title {
+    @apply text-[26px] leading-[1.2] tracking-[-0.03em] md:tracking-normal mb-[10px] md:mb-0;
+  }
+  .box_cta-deco {
+    @apply absolute bottom-0 left-0 justify-between w-full flex pointer-events-none;
+  }
+
   /* cards */
   .card_lg {
     @apply border-divider border p-6 shadow-2xl flex flex-col gap-4 p-[14px] rounded-[20px] bg-white;
@@ -347,6 +358,12 @@
   }
   .tag--strong {
     @apply font-[600] px-[10px] py-[6px] gap-[5px];
+  }
+  .tag--transparent {
+    @apply  pl-[6px] text-[17px] bg-white/10 border-white/15 justify-start text-white m-0 font-instrument gap-[6px];
+  }
+  .tag_group {
+    @apply flex-1 flex flex-wrap gap-y-[12px] gap-x-[4px] flex-row gap-[4px] sm:items-start sm:justify-center sm:flex-wrap w-full mt-[20px] md:mt-[15px] sm:mt-auto;
   }
   
   /* header */
