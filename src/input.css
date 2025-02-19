@@ -214,7 +214,7 @@
     @apply flex-1 border border-divider rounded-[16px] flex gap-[8px] flex-col p-[20px];
   }
   .box_outline-title {
-    @apply flex text-dark gap-3 font-bricolage text-[18px] font-[500] items-start gap-[8px];
+    @apply flex text-dark gap-3 font-bricolage text-[18px] font-[500] items-start gap-[8px] tracking-[-0.2px];
   }
 
   /* eliminar esto */
@@ -231,6 +231,26 @@
     @apply font-bricolage text-dark flex-1 font-[500] text-[16px] tracking-[-0.03em] md:tracking-normal md:text-[18px];
   }
 
+  /* cards */
+  .card_lg {
+    @apply border-divider border p-6 shadow-2xl flex flex-col gap-4 p-[14px] rounded-[20px] bg-white;
+  }
+  .card_lg .btn_icon {
+    @apply rounded-[12px];
+  }
+  .card_lg-title {
+    @apply font-[500] text-dark font-bricolage mb-[12px] flex gap-[12px] items-center justify-start md:mb-[5px];
+  }
+  .card_lg .btn_icon {
+    @apply hidden md:flex;
+  }
+  .card_lg-title .btn_icon {
+    @apply inline-flex md:hidden;
+  }
+  .card_lg-text {
+    @apply text-[16px];
+  }
+
 
   .box.p-6 .font-bricolage {
     @apply font-[500];
@@ -245,6 +265,28 @@
   }
   .box_gradient-text {
     @apply font-bricolage text-white font-semibold leading-[1.2] md:leading-[1.3] antialiased tracking-normal text-[20px] lg:text-[24px];
+  }
+
+  .box_grid {
+    @apply grid grid-cols-1 gap-[24px] lg:grid-cols-3 w-full px-[12px] text-center;
+  }
+  .box_grid-item {
+    @apply box border border-divider shadow-2xl flex flex-col gap-3 w-full p-0;
+  }
+  .box_grid-title {
+    @apply font-bricolage md:text-[18px] md:text-[20px] text-dark font-semibold;
+  }
+  .box_grid-description {
+    @apply text-[16px] font-[500] antialiased;
+  }
+  .box_grid-numering {
+    @apply flex w-full font-bricolage px-[24px] justify-center gap-[10px] items-center;
+  }
+  .box_grid-numering_text {
+    @apply text-center text-dark font-[600] text-[16px] flex-auto max-w-[100px] md:max-w-[40px] leading-[1];
+  }
+  .box_grid-info {
+    @apply flex flex-col gap-3 p-[24px] pt-0;
   }
 
   /* list */
@@ -277,6 +319,10 @@
   .btn {
     @apply py-3 px-5 rounded-lg transition-transform duration-300 text-tiny;
   }
+  .btn_full {
+    @apply w-full md:w-auto text-center;
+  }
+
   
   .btn:hover {
     @apply -translate-y-1;
@@ -284,6 +330,9 @@
   
   .btn_icon {
     @apply flex-col justify-center items-center inline-flex p-[0] h-[56px] w-[56px] rounded-[15px];
+  }
+  .btn_icon--sm {
+    @apply h-[48px] w-[48px];
   }
   .box .btn_icon {
     @apply p-[0] h-[56px] w-[56px];
