@@ -2002,6 +2002,23 @@ h4{
   }
 }
 
+.grid_4x1.xl\:grid-cols-2{
+  gap: 13px;
+}
+
+.grid_4x1{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 17px;
+}
+
+@media (min-width: 1024px){
+  .grid_4x1{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 /* images */
 
 .img_full{
@@ -3143,6 +3160,10 @@ h4{
   margin-bottom: 10px;
 }
 
+.mb-\[12px\]{
+  margin-bottom: 12px;
+}
+
 .mb-\[20px\]{
   margin-bottom: 20px;
 }
@@ -3207,14 +3228,6 @@ h4{
   margin-top: 60px;
 }
 
-.mt-\[80px\]{
-  margin-top: 80px;
-}
-
-.mt-\[40px\]{
-  margin-top: 40px;
-}
-
 .mt-\[20px\]{
   margin-top: 20px;
 }
@@ -3249,6 +3262,10 @@ h4{
 
 .h-\[auto\]{
   height: auto;
+}
+
+.h-\[70px\]{
+  height: 70px;
 }
 
 .max-h-\[100\%\]{
@@ -3347,12 +3364,12 @@ h4{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.flex-col{
-  flex-direction: column;
+.flex-row{
+  flex-direction: row;
 }
 
-.flex-col-reverse{
-  flex-direction: column-reverse;
+.flex-col{
+  flex-direction: column;
 }
 
 .items-start{
@@ -3787,10 +3804,6 @@ h4{
   padding-top: 20px;
 }
 
-.text-left{
-  text-align: left;
-}
-
 .text-center{
   text-align: center;
 }
@@ -3809,6 +3822,10 @@ h4{
 
 .text-\[17px\]{
   font-size: 17px;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
 }
 
 .text-\[28px\]{
@@ -3834,13 +3851,12 @@ h4{
   line-height: 1.5;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-\[23px\]{
+  font-size: 23px;
 }
 
-.text-\[18px\]{
-  font-size: 18px;
+.font-\[400\]{
+  font-weight: 400;
 }
 
 .font-\[500\]{
@@ -3865,10 +3881,6 @@ h4{
 
 .tracking-normal{
   letter-spacing: 0em;
-}
-
-.tracking-\[\]{
-  letter-spacing: ;
 }
 
 .text-dark{
@@ -3979,6 +3991,14 @@ textarea:focus,
     margin-bottom: 0px;
   }
 
+  .md\:mb-\[30px\]{
+    margin-bottom: 30px;
+  }
+
+  .md\:mb-\[40px\]{
+    margin-bottom: 40px;
+  }
+
   .md\:mt-6{
     margin-top: 1.5rem;
   }
@@ -4003,20 +4023,12 @@ textarea:focus,
     margin-top: 80px;
   }
 
-  .md\:mb-\[40px\]{
-    margin-bottom: 40px;
-  }
-
   .md\:flex{
     display: flex;
   }
 
   .md\:hidden{
     display: none;
-  }
-
-  .md\:w-\[40px\]{
-    width: 40px;
   }
 
   .md\:w-auto{
@@ -4043,20 +4055,12 @@ textarea:focus,
     max-width: 580px;
   }
 
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
 
   .md\:flex-row-reverse{
     flex-direction: row-reverse;
-  }
-
-  .md\:flex-col{
-    flex-direction: column;
   }
 
   .md\:items-center{
@@ -4130,6 +4134,11 @@ textarea:focus,
     padding-right: 10px;
   }
 
+  .md\:px-\[11px\]{
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
   .md\:px-\[12px\]{
     padding-left: 12px;
     padding-right: 12px;
@@ -4155,20 +4164,6 @@ textarea:focus,
     padding-bottom: 60px;
   }
 
-  .md\:px-\[6px\]{
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-
-  .md\:px-\[11px\]{
-    padding-left: 11px;
-    padding-right: 11px;
-  }
-
-  .md\:pr-\[10px\]{
-    padding-right: 10px;
-  }
-
   .md\:pt-14{
     padding-top: 3.5rem;
   }
@@ -4179,6 +4174,10 @@ textarea:focus,
 
   .md\:text-center{
     text-align: center;
+  }
+
+  .md\:text-\[16px\]{
+    font-size: 16px;
   }
 
   .md\:text-\[18px\]{
@@ -4193,8 +4192,8 @@ textarea:focus,
     font-size: 35px;
   }
 
-  .md\:text-\[16px\]{
-    font-size: 16px;
+  .md\:text-\[22px\]{
+    font-size: 22px;
   }
 
   .md\:tracking-normal{
@@ -4219,6 +4218,10 @@ textarea:focus,
     margin-top: 30px;
   }
 
+  .lg\:mt-\[40px\]{
+    margin-top: 40px;
+  }
+
   .lg\:mt-\[80px\]{
     margin-top: 80px;
   }
@@ -4235,12 +4238,12 @@ textarea:focus,
     max-height: 400px;
   }
 
-  .lg\:max-h-none{
-    max-height: none;
-  }
-
   .lg\:max-h-\[506px\]{
     max-height: 506px;
+  }
+
+  .lg\:max-h-none{
+    max-height: none;
   }
 
   .lg\:max-w-\[537px\]{
@@ -4261,10 +4264,6 @@ textarea:focus,
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -4297,10 +4296,6 @@ textarea:focus,
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:pr-0{
-    padding-right: 0px;
   }
 
   .lg\:pt-\[50px\]{

@@ -333,6 +333,9 @@
   .grid_3x2 {
     @apply grid grid-cols-1 gap-[17px] md:grid-cols-2 lg:grid-cols-3 w-full;
   }
+  .grid_4x1 {
+    @apply grid grid-cols-1 gap-[17px] lg:grid-cols-4 w-full;
+  }
 
   /* images */
   .img_full {
