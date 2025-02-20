@@ -3468,6 +3468,11 @@ h4{
   --tw-gradient-to: #DE5A59 var(--tw-gradient-to-position);
 }
 
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+
 .object-top{
   -o-object-position: top;
      object-position: top;
