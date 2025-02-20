@@ -464,43 +464,88 @@
     @apply opacity-100 translate-y-0;
   }
 
-
   .scroll-section {
     @apply overflow-hidden w-full;
   }
   .gallery {
-    @apply relative flex w-full items-center justify-center min-h-[600px] max-w-[500px] m-auto xs:min-h-[700px] sm:max-w-[700px] sm:min-h-[800px] lg:max-w-[900px] lg:min-h-[1000px];
+    @apply relative flex w-full items-center justify-center min-h-[480px] max-w-[calc(100%-25px)] m-auto md:max-w-[650px] md:min-h-[800px] lg:max-w-[1050px] lg:min-h-[115vh] pt-[10vh];
   }
-  .gallery_container {
+  .gallery_info {
     @apply text-center relative w-full;
   }
+
+  .gallery_pics {
+    @apply absolute w-full h-full top-0 left-0;
+  }
+
+  .gallery_item {
+    @apply p-[4px] md:p-[16px] absolute m-auto rounded-[6px] md:rounded-[24px] overflow-hidden bg-white inline-block;
+  }
   .gallery_item-image {
-    @apply absolute left-0 top-0 object-cover object-center w-full h-full rounded-[12px] overflow-hidden;
+    @apply absolute left-0 top-0 object-cover object-top rounded-[6px] md:rounded-[12px] overflow-hidden relative;
   }
-  .gallery_item-tc, .gallery_item-tl, .gallery_item-tr, .gallery_item-br, .gallery_item-bl {
-    @apply border-white border-[8px] md:border-[20px] absolute m-auto rounded-[24px] overflow-hidden bg-white;
-  }
+
+  /* position */
   .gallery_item-tc {
-    @apply w-[150px] h-[100px] bottom-[calc(100%+110px)] right-[40px] left-[0px] xs:w-[200px] xs:h-[150px] xs:right-[-100px] sm:w-[300px] sm:h-[180px] lg:w-[400px] lg:h-[220px] lg:bottom-[calc(100%+120px)];
+    @apply left-[calc(50%-56px)] top-[50px] md:left-[calc(50%-100px)] md:top-[100px] lg:left-[calc(50%-150px)];
   }
+  /* size */
+  .gallery_item-tc .gallery_item-image {
+    @apply w-[112px] h-[74px] md:w-[167px] md:h-[112px] lg:w-[300px] lg:h-[202px];
+  }
+
+  /* position */
   .gallery_item-tl {
-    @apply w-[80px] h-[120px] bottom-[calc(100%-30px)] left-[0px] xs:w-[120px] xs:h-[130px] xs:bottom-[calc(100%-30px)] sm:w-[150px] sm:h-[200px] sm:bottom-[100px] lg:w-[200px] lg:h-[300px] lg:bottom-[calc(100%-100px)];
+    @apply p-[6px] md:p-[16px] left-0 top-[28%] md:left-0 md:top-[26%]  lg:top-[20%] lg:left-0;
   }
+  /* size */
+  .gallery_item-tl .gallery_item-image {
+    @apply w-[68px] h-[89px] md:w-[108px] md:h-[141px] lg:w-[183px] lg:h-[241px];
+  }
+
+  /* position */
   .gallery_item-tr {
-    @apply w-[80px] h-[120px] bottom-[calc(100%-10px)] right-[-10px] xs:w-[100px] xs:h-[150px] xs:bottom-[calc(100%-80px)] sm:w-[150px] sm:h-[200px] sm:bottom-[calc(100%-120px)] lg:w-[200px] lg:h-[300px] lg:bottom-0 lg:top-0;
+    @apply p-[6px] md:p-[16px] right-0 top-[30%] md:right-0 md:top-[40%] lg:left-[calc(50%+240px)] lg:right-auto;
   }
+  /* size */
+  .gallery_item-tr .gallery_item-image {
+    @apply w-[69px] h-[102px] md:w-[88px] md:h-[133px] lg:w-[165px] lg:h-[250px];
+  }
+
+  /* position */
   .gallery_item-bl {
-    @apply w-[150px] h-[90px] top-[calc(100%+30px)] left-[-10px] xs:w-[160px] xs:h-[120px] sm:w-[250px] sm:h-[200px] sm:top-[calc(100%+40px)] sm:left-[30px] lg:w-[350px] lg:top-[calc(100%+70px)];
+    @apply p-[6px] md:p-[16px] left-0 bottom-[5%] md:left-[8%] md:bottom-[8%]  lg:bottom-[10%] lg:left-[10%];
   }
+  /* size */
+  .gallery_item-bl .gallery_item-image {
+    @apply w-[88px] h-[58px] md:w-[168px] md:h-[112px] lg:w-[246px] lg:h-[164px];
+  }
+
+  /* position */
   .gallery_item-br {
-    @apply w-[100px] h-[140px] top-[calc(100%+50px)] right-[0px] xs:w-[120px] xs:h-[200px] xs:right-[20px] sm:w-[250px] sm:h-[180px] sm:top-[calc(100%+100px)] lg:w-[350px] lg:top-[calc(100%+150px)] lg:h-[200px] lg:right-[70px];
+    @apply p-[6px] md:p-[16px] right-[12%] bottom-[0%] md:right-auto md:left-[50%] md:bottom-[5%]  lg:bottom-[5%] lg:left-[52%];
   }
+  /* size */
+  .gallery_item-br .gallery_item-image {
+    @apply w-[89px] h-[59px] md:w-[168px] md:h-[112px] lg:w-[238px] lg:h-[160px];
+  }
+
   /* bg */
   .gallery_bg {
     @apply absolute top-0 left-0 h-full w-full;
   }
   .gallery_bg-img {
     @apply object-contain object-center opacity-50 absolute h-full w-full;
+  }
+  /* title */
+  .gallery_headline {
+    @apply text-center text-white mt-2 text-[26px] md:text-[50px] font-[700] leading-[1.2];
+  }
+  .gallery_icon {
+    @apply w-[124px] m-auto text-right;
+  }
+  .gallery_icon img {
+    @apply inline-block ml-10 w-[44px];
   }
   /* scroll container */
   .scroll-content {
