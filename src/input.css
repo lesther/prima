@@ -412,7 +412,7 @@
   }
 
   .header_container {
-    @apply container flex items-center p-[10px] shadow-[0_4px_32px_0_rgba(0,0,0,0.14)] gap-4 w-full rounded-[8px] bg-white xl:justify-between md:py-[18px] md:px-6 md:rounded-[10px];
+    @apply container flex items-center p-[10px] shadow-[0_4px_32px_0_rgba(0,0,0,0.14)] gap-4 w-full rounded-[8px] bg-white xl:justify-between md:py-[18px] md:px-6 md:rounded-[10px] relative;
   }
   .header_logo {
     @apply flex-1 xl:flex-initial min-w-[145px];
@@ -426,31 +426,44 @@
 
   /* nav */
   .nav_wrap {
-    @apply flex-1 flex items-center justify-center relative;
+    @apply flex-1 flex items-center justify-center;
   }
   .nav_menu {
-    @apply flex gap-2 text-tiny bg-white  absolute min-w-max top-[calc(100%+10px)] right-0 p-2 rounded-[10px] flex-col invisible opacity-0 transition-all shadow-lg z-[1] xl:relative xl:p-0 xl:flex-row xl:justify-center xl:items-center xl:gap-6 xl:opacity-100 xl:visible xl:shadow-none;
+    @apply flex gap-0  text-[16px] text-dark xl:text-body bg-[#F4F4F4] xl:bg-white absolute min-w-full top-[calc(100%+3px)] right-0 rounded-[10px] flex-col invisible opacity-0 transition-all shadow-lg z-[1] xl:relative xl:p-0 xl:flex-row xl:justify-center xl:items-center xl:gap-6 xl:opacity-100 xl:visible xl:shadow-none overflow-hidden;
   }
   .nav_menu--active {
     @apply opacity-100 visible;
   }
   .nav_menu-item {
-    @apply px-4 py-2 block rounded-[5px]  xl:bg-transparent xl:px-0;
+    @apply px-4 py-2 block xl:rounded-[5px]  xl:bg-transparent xl:px-0 text-center;
   }
   .nav_menu-item:hover {
     @apply xl:text-dark;
   }
   .nav_menu-item--active {
-    @apply text-white bg-primary xl:text-dark xl:bg-transparent;
+    @apply text-white bg-[#3f444b] xl:text-dark xl:bg-transparent;
   }
   .nav_button {
-    @apply  bg-primary rounded-[3px] xl:hidden md:p-[5px] p-[7px];
+    @apply relative bg-primary rounded-[3px] xl:hidden md:p-[5px] p-[7px];
   }
   .nav_button:hover {
     @apply -translate-y-0;
   }
   .nav_button-icon {
     @apply w-[22px] md:w-[28px];
+  }
+  .nav_button-close, .nav_button-open {
+    @apply transition_03 transition-all;
+  }
+  .nav_button-close,
+  .nav_menu--active ~ .nav_button .nav_button-open {
+    @apply opacity-0;
+  }
+  .nav_menu--active ~ .nav_button .nav_button-close {
+    @apply opacity-100;
+  }
+  .nav_button-close {
+    @apply absolute left-0 right-0 bottom-0 top-0 m-auto w-[28px] h-[28px];
   }
   
   /* footer */
