@@ -258,6 +258,9 @@
   .card_lg .btn_icon {
     @apply hidden md:flex;
   }
+  .card_lg .block.btn_icon {
+    @apply flex;
+  }
   .card_lg-title .btn_icon {
     @apply inline-flex md:hidden;
   }
