@@ -389,6 +389,9 @@
   .tag_group {
     @apply flex-1 flex flex-wrap gap-y-[12px] gap-x-[4px] flex-row gap-[4px] sm:items-start sm:justify-center sm:flex-wrap w-full mt-[20px] md:mt-[15px] sm:mt-auto;
   }
+  .tag_lg {
+    @apply tag text-[19px] font-walsheim text-dark font-[500] py-[5px] px-[10px];
+  }
   
   /* header */
   .header {
